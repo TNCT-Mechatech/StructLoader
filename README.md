@@ -1,0 +1,2 @@
+# LoadStructList
+SerialBridge用の通信構造体をYAMLから読み込むプログラム
