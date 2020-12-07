@@ -17,28 +17,30 @@ class Struct:
         self.msg_id = int(msg_id)
         # list head index
         self.head_index = 0
+        self.variable_list = []
     
     ## Setter
-    def add_variable(variable_name,variable_type):
-        self.variable_list[self.head_index] = (str(self.variable_name),str(self.variable_type))
+    def add_variable(self,variable_name,variable_type):
+        #self.variable_list[self.head_index] = (str(variable_name),str(variable_type))
+        self.variable_list.append((str(variable_name),str(variable_type)))
         self.head_index += 1
     
     ## Getter
     # get list of variable(name,type)
-    def get_variable_list():
+    def get_variable_list(self):
         return self.variable_list
     
     # get struct name
-    def get_struct_name():
+    def get_struct_name(self):
         return self.struct_name
     
     # get message id
-    def get_msg_id():
+    def get_msg_id(self):
         return self.msg_id
     
     # print struct data
-    def print_struct():
-        print("struct_name: " + self.struct_name + " message_id: " + self.message_id)
+    def print_struct(self):
+        print("struct_name: " + self.struct_name + " message_id: " + str(self.msg_id))
         # show list
         for a, b in self.variable_list:
             print("variable_name: " + a + " variable_type: " + b)
