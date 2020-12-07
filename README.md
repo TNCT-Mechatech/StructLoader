@@ -1,4 +1,4 @@
-# LoadStructList
+# LoadStruct
 SerialBridge用の通信構造体をYAMLから読み込むプログラム
 
 ## 開発環境
