@@ -1,10 +1,9 @@
 #encoding=utf-8
-# File: StructList
-# Discription: you are able to get struct class(struct_name,msg_id(int),List<Pair<variable_name,variable_type>>) 
-# Date: 2020/12/6
+# File: StructClass
+# Discription: struct class(struct_name,msg_id(int),List<Pair<variable_name,variable_type>>) 
+# Date: 2020/12/7
 # Author: testusuke
 # GitHub: https://github.com/testusuke
-
 
 # StructClass
 # This class includes struct_name,msg_id(Int),variable_list<variable<variable_name,variable_type>>
