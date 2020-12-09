@@ -43,4 +43,4 @@ class Struct:
         print("struct_name: " + self.struct_name + " message_id: " + str(self.msg_id))
         # show list
         for a, b in self.variable_list:
-            print("variable_name: " + a + " variable_type: " + b)
+            print("name: " + a + " type: " + b)

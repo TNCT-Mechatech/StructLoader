@@ -9,6 +9,7 @@ import Struct as st
 import os
 import traceback
 import yaml
+from collections import OrderedDict
 
 
 class LoadStruct:
@@ -36,7 +37,11 @@ class LoadStruct:
         # get info
         try:
             with open(self.path) as file:
-                obj = yaml.safe_load(file)
+                # PyYaml Setting
+                yaml.add_constructor(yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG,
+                    lambda loader, node: OrderedDict(loader.construct_pairs(node)))
+                obj = yaml.load(file)
+
                 print(obj)
                 # detect struct_name key
                 for key in obj.keys():

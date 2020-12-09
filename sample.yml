@@ -1,3 +1,5 @@
-struct_name:
-  variable_name: 'type'
+vector3:
+  x: 'float'
+  y: 'float'
+  z: 'float'
 msg_id: 0
