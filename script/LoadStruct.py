@@ -9,12 +9,12 @@ import Struct as st
 import os
 import traceback
 import yaml
-#from strictyaml import load, Map, Str, Int, Seq, YAMLError
+
 
 class LoadStruct:
     def __init__(self,path):
         print("info: init LoadStruct")
-        self.path = path
+        self.path = target_path = os.path.join(os.path.dirname(__file__), path)
         # load struct
         self.load_struct()
         
